@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lista de Tarefas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="intro col-12">
+          <h1>Lista de Tarefas</h1>
+          <div>
+            <div class="border1"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="width: 100%">
+        <div class="dados">
+          <input
+            id="userInput"
+            type="text"
+            placeholder="Nova Tarefa..."
+            maxlength="27"
+          />
+          <button id="enter">
+            <i class=""><img src="pencil.png" /></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Empty List -->
+      <div class="row">
+        <div class="listItems col-12">
+          <ul class="col-12 offset-0 col-sm-8 offset-sm-2" id="ul"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
